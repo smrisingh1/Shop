@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa&family=Roboto+Condensed:wght@300&display=swap");
+
+body {
+  background-color: #f8f9fd;
+  margin: 2% 5%;
+}
+
+.sec-1 {
+  background-color: #fefefe;
+  padding: 2%;
+  border-radius: 10px;
+  width: 55%;
+  float: left;
+  margin: 0 1% 0 1%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3%;
+}
+.products .item {
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5% 5% 4% 5%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans Tangsa", sans-serif;
+}
+
+.item:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.products .item .img {
+  width: 100%;
+}
+
+.products .title {
+  text-align: center;
+}
+
+.products button {
+  padding: 2% 10%;
+  font-size: 15px;
+  color: #dc3546;
+  border-color: #dc3546;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #dc3546;
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 8vw 6vw 6vw 2.5vw;
+  column-gap: 1%;
+  justify-content: space-between;
+  border-top: 2px solid #eaeeef;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #cacaca;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 8vw 6vw 6vw 2.5vw;
+  column-gap: 1%;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  border-top: 2px solid #eaeeef;
+  border-bottom: 2px solid #eaeeef;
+  font-family: "Noto Sans Tangsa", sans-serif;
+}
+
+.discount {
+  padding: 10% 0 5% 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.tax {
+  padding: 2% 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.total {
+  padding: 2% 0;
+  font-family: "Noto Sans Tangsa", sans-serif;
+  font-size: 20px;
+}
+
+.total-quantity {
+  padding: 4% 0 7% 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.check-out {
+  width: 30%;
+  float: right;
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+  margin: 0 3% 0 2%;
+}
+
+.order {
+  width: 90%;
+  margin-left: 5%;
+  padding: 4%;
+  font-size: 15px;
+  background-color: #dc3546;
+  color: white;
+  border-color: #dc3546;
+  border-radius: 5px;
+}
+.order:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-solid {
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+ .check-out{
+  width: 90%;
+  margin: 5%;
+ }
+}
+
+@media only screen and (max-width: 832px) {
+  .sec-1{
+   width: 90%;
+   margin: 5%;
+  }
+ }
+
